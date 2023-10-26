@@ -100,11 +100,24 @@ button {
 /*end of header*/
 .body1 {
     display: flex;
+    flex-direction: column;
+    padding: 0 250px;
+    
+}
+.body1 p{
+    
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    
+}
+.maincards {
+    display: flex;
     flex-wrap: wrap;
-    padding: 50px 250px;
+    
     justify-content: center;
     align-items: center;
-    
+    padding-bottom: 120px;
 }
 .card{
     
@@ -113,7 +126,7 @@ button {
     gap: 50px;
     width: 200px;
     height: 170px;
-    margin: 16px;
+    margin: 20px;
     border: 5px solid blue;
     border-radius: 8px;
     
@@ -132,19 +145,29 @@ img{
 
 */
 
-p {
-    text-align: center;
-}
+
 
 /* body2*/
 
 .body2 {
-    
+    display: flex;
+    flex-direction: column;
     padding: 50px 250px;
-    justify-content: center;
-    align-items: center;
+    
+    
     background-color: #e5e7eb;
     
+}
+
+.body2 p {
+    margin: 0;
+}
+
+.body2 j {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    font-family: 'Roboto', arial;
+    text-align: right;
 }
 
 .three {
@@ -154,4 +177,57 @@ p {
 }
 .four {
     text-align: end;
+}
+
+/* call for action*/
+.call {
+    display: flex;
+    
+    padding: 50px 250px;
+    
+
+}
+
+.banner {
+    display: flex;
+    flex: 1;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 30px;
+    
+    justify-content: space-between;
+    
+    
+}
+
+.cleft, .cright {
+    display: flex;
+    flex: 1;
+}
+
+.cleft {
+    flex-direction: column;
+    padding: 0 100px;
+    
+    
+}
+.cleft p{
+    margin: 0;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+}
+.cright {
+    justify-content: center;
+    align-items: center;
+}
+.cright button {
+    border: 2px solid white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    color: white;
 }
